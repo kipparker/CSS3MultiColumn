@@ -12,9 +12,11 @@ Usage
 Upload the script to your site.
 Attach the script after the links to your stylesheet(s). Example:
 
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<script type="text/javascript" src="css3-multi-column.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script type="text/javascript" src="css3-multi-column.js"></script>
+
 You can now use any of these CSS3 multi-column properties in your stylesheet (providing that you understand the limitations given below).
+
     New CSS Property 	Type 	Example
     column-count 	a number 	3
     column-width 	a value in pixels 	200px
@@ -27,6 +29,7 @@ Values for column-width and column-gap must be given in pixels.
 The implementation relies on a light javascript css parsers. Avoid complex css structures (like cascading rules).
 
 This is ok:
+
     .article {
        column-count: 3;
        column-gap: 20px;
