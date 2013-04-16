@@ -3,7 +3,7 @@ CSS3MultiColumn
 
 An update to CSS3MultiColumn by Cédric Savarese to support HTML5 elements.
 
-The original code can be found here: 
+The original code can be found here:
 http://www.csscripting.com/css-multi-column/
 
 
@@ -25,7 +25,7 @@ You can now use any of these CSS3 multi-column properties in your stylesheet (pr
 
 Limitations (as of version 1.0beta)
 
-Values for column-width and column-gap must be given in pixels.
+Values for column-width and column-gap must be given in pixels. You must include column-count and use long-hand syntax.
 The implementation relies on a light javascript css parsers. Avoid complex css structures (like cascading rules).
 
 This is ok:
