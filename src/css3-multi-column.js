@@ -76,11 +76,11 @@ function CSS3MultiColumn() {
 	
 		 return false
 		   If location.host is not present in the stylesheet URL OR
-		   If location.host isn't present in the first 20 characters of the stylesheet URL
+		   If location.host isn't present in the first 50 characters of the stylesheet URL
 		     - This is good when you're using a service like TypeKit where your host may be
 		       included in the URL of a linked stylesheet
 		*/
-		if (s.href.indexOf(location.host) == -1 || s.href.indexOf(location.host) > 20 ) {
+		if (s.href.indexOf(location.host) == -1 || s.href.indexOf(location.host) > 50 ) {
             return false;
         }
 		if (s.href && s.cssText) {
