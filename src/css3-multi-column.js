@@ -71,6 +71,18 @@ function CSS3MultiColumn() {
 	// loadCssCache
 	// Asynchronous function. Call the 'callback' function when done.
 	function loadCssCache(s, callback) {
+		/*
+	     Purpose: To prevent corss-domain issues
+	
+		 return false
+		   If location.host is not present in the stylesheet URL OR
+		   If location.host isn't present in the first 50 characters of the stylesheet URL
+		     - This is good when you're using a service like TypeKit where your host may be
+		       included in the URL of a linked stylesheet
+		*/
+		if (s.href.indexOf(location.host) == -1 || s.href.indexOf(location.host) > 50 ) {
+            return false;
+        }
 		if (s.href && s.cssText) {
 			cssCache[s.href] = s.cssText;
 			eval(callback)();
