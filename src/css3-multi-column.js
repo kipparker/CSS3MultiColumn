@@ -80,7 +80,7 @@ function CSS3MultiColumn() {
 		     - This is good when you're using a service like TypeKit where your host may be
 		       included in the URL of a linked stylesheet
 		*/
-		if (s.href.indexOf(location.host) == -1 || s.href.indexOf(location.host) > 50 ) {
+		if (s.href == null || s.href.indexOf(location.host) == -1 || s.href.indexOf(location.host) > 50 ) {
             return false;
         }
 		if (s.href && s.cssText) {
