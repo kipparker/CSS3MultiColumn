@@ -1,0 +1,19 @@
+{
+  "name": "css3-multi-column",
+  "version": "0.0.1",
+  "description": "CSS3MultiColumn",
+  "main": "src/css3-multi-column.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/manasian/CSS3MultiColumn.git"
+  },
+  "author": {
+    "name": "Cdric Savarese",
+    "email": "pro@4213miles.com"
+  },
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://gitlab.com/manasian/CSS3MultiColumn/issues"
+  },
+  "homepage": "https://gitlab.com/manasian/CSS3MultiColumn#README"
+}
